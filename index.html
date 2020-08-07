@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Surevey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Tell us what type of music do you like</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="1"
+            max="3"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Choose a music genre:</label>
+          <select name="music-genre" id="dropdown" form="survey-form">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="hip hop">Hip Hop</option>
+            <option value="heavy metal">Heavy Metal</option>
+            <option value="blues">Blues</option>
+          </select>
+        </div>
+        <div class="form-group-check">
+          <p>Where do you listen music</p>
+          <input type="checkbox" name="place" id="home" value="home" />
+          <label for="home">At Home</label>
+          <input type="checkbox" name="place" id="car" value="car" />
+          <label for="car">In my car</label>
+          <input type="checkbox" name="place" id="gym" value="gym" />
+          <label for="gym">At the gym</label>
+          <input type="checkbox" name="place" id="work" value="work" />
+          <label for="work">At work</label>
+        </div>
+
+        <div class="form-group-radio">
+          <p>Do you play a musical instrument?</p>
+          <div class="radio-wrapper">
+            <input type="radio" id="guitar" name="instrument" value="guitar" />
+            <label for="guitar">Guitar</label><br />
+            <input type="radio" id="piano" name="instrument" value="piano" />
+            <label for="piano">Piano</label><br />
+            <input type="radio" id="bass" name="instrument" value="bass" />
+            <label for="bass">Bass</label><br />
+            <input type="radio" id="drums" name="instrument" value="drums" />
+            <label for="drums">Drums</label><br />
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+
+        <div class="form-group">
+          <p class="paragraph-textarea">Any comments or suggestions?</p>
+          <textarea
+            class="input-textarea"
+            name="comments"
+            id="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
