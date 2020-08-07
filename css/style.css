@@ -129,9 +129,15 @@ p {
   width: 100%;
   padding: 0.7rem;
   border-radius: 10px;
-  border: transparent;
   margin-bottom: 1rem;
   color: rgb(63, 63, 63);
+}
+select {
+  border: 2px solid rgba(255, 192, 203, 0);
+  transition: all 0.3s;
+}
+select:hover {
+  border: 2px solid rgb(250, 117, 140);
 }
 
 #submit {
@@ -170,6 +176,11 @@ p {
   border-radius: 10px;
   padding: 1rem;
   color: gray;
+  transition: all 0.3s;
+  border: 3px solid rgba(255, 192, 203, 0);
+}
+.form-group textarea:hover {
+  border: 3px solid rgb(250, 117, 140);
 }
 .paragraph-textarea {
   margin-top: 4rem;
